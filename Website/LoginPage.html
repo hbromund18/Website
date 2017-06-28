@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+<h1 align="center">Log In</h1> 
+<hr width="25%">
+<div id="contain">
+<form name="loginform" align="center" onsubmit="return login()" >
+	<br>
+	<input type="text" placeholder="Username" name="username" id=username required>
+	<br>
+	<br>
+	<input type="Password" placeholder="Password" name="password" id=password required>
+	<br>
+	<input type="checkbox"><label for="checkbox">Keep me logged in</label>
+	<br>
+	<input type="Submit" value= "Login">
+
+	<script>
+	function login(){
+		console.log("hello");
+		if (document.loginform.username.value !== "Batman"){
+			window.alert("Username does not exist."); 
+			document.loginform.username.focus();
+			return false;
+		} 
+		else (document.loginform.username.value == "Batman"){
+			return true;
+		}
+
+	}
+	</script>
+	</div>
+	#contain {
+	position: fixed;
+	width: 400px;
+	height: 300px;
+	}
+</form>
+</body>
+</html>
