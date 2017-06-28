@@ -1,5 +1,9 @@
 body {
-	background-color:grey;
+	background-color:#1992ad;
+}
+h1{font-family: 'Open Sans', serif;
+
+
 }
 table {
 	width:100%;
@@ -9,10 +13,12 @@ table {
     font-family: arial, sans-serif;
     border-collapse:collapse;
     width: 40%;
+    font-family: 'Open Sans', serif;
 }
 
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    font-family: 'Open Sans', serif;
 }
