@@ -1,21 +1,69 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+html, body{
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+#contain {
+	position: fixed;
+	width: 375px;
+	height: 400px;
+	top: 30%;
+	left: 50%;
+	margin-top: -160px;
+	margin-left: -185px;
+	background: #A1D6E2;
+	border: 1px solid #ccc;
+
+}
+#bottom {
+	background:#ccffff;
+	width: 92%;
+	height: 70px;
+	margin-top: 30px;
+	margin-left: 16px;
+}
+#forgotpassword {
+	margin-top:12px;
+}
+input[type=text]{
+	padding-left: 10px;
+	margin: 10px;
+	margin-top: 17px;
+	margin-left: 30px;
+	width: 300px;
+	height: 40px;
+}
+input[type=password] {
+	padding-left: 10px;
+	margin: 10px;
+	margin-top: 10px;
+	margin-left: 30px;
+	width: 300px;
+	height: 40px;
+}
+</style> 
+</head>
 <body>
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-<h1 align="center">Log In</h1> 
-<hr width="25%">
 <div id="contain">
-<form name="loginform" align="center" onsubmit="return login()" >
-	<br>
+<form name="loginform" onsubmit="return login()" >
+	<p align="center"> <font size="+3">Log In</font> <p>
+	<hr width="50%" color= "#000000">
+	<!--username and password-->
 	<input type="text" placeholder="Username" name="username" id=username required>
 	<br>
-	<br>
 	<input type="Password" placeholder="Password" name="password" id=password required>
-	<br>
+	<div id="bottom"> <!--lower-->
 	<input type="checkbox"><label for="checkbox">Keep me logged in</label>
-	<br>
 	<input type="Submit" value= "Login">
-
+	</div> <!--lower-->
+	<div id="forgotpassword" align="center"><!--password forgot area-->
+	<font size="-1">
+	<a> Forgot password?</a> <br>
+	<a href="file:///Users/admin/Documents/GitHub/Website/Website/Sign%20Up.html"> Don't have an account? Sign up now </a> 
+	</font>
+	</div>
 	<script>
 	function login(){
 		console.log("hello");
@@ -30,12 +78,7 @@
 
 	}
 	</script>
-	</div>
-	#contain {
-	position: fixed;
-	width: 400px;
-	height: 300px;
-	}
 </form>
+</div>
 </body>
 </html>
