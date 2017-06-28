@@ -3,7 +3,14 @@
              
              white-space: nowrap;
             
-		 }       
+		 }    
+         html{
+             height: 100%;
+         }
+         body{
+             height: 100%;
+             width: 100%;
+         }   
          .nospace{
              font-size: 0px;
          }
@@ -23,6 +30,7 @@
             overflow: hidden;
     		background-color: #bcbabe;
     		font-family: 'Open Sans', serif;
+            
             display:table; 
             margin:0 auto;
             opacity: .8;
@@ -34,12 +42,13 @@
 
 		li a {
             padding-top: 25px;
-            padding-right: 100px;
+            padding-right: 75px;
             padding-bottom: 25px;
-            padding-left: 100px;
+            padding-left: 75px;
     		display: block;
    			color: white;
     		text-align: center;
+            font-size: 30px;
     		text-decoration: none;
             color: #000;
 		}
@@ -66,16 +75,20 @@
         background-color: #bcbabe;
         color: black;
         display: block;
-        padding: 12px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 1px;
+        padding-bottom: 1px;
         text-decoration: none;
         opacity: .8;
+        font-size: 30px;
 }
 
-.vertical-menu a:hover {
-    background-color: #1992ad;
-     font-weight: bold;
-}
+    .vertical-menu a:hover {
+        background-color: #1992ad;
+        font-weight: bold;
+    }
 
-.vertical-menu a.active {
-    background-color: #A1D6E2;
-}
+    .vertical-menu .active {
+        background-color: #A1D6E2;
+    }

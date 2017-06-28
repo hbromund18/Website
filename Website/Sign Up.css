@@ -1,18 +1,39 @@
 body {
-	background-color:grey;
+    background-color:#1992ad;
 }
+
+h1{
+font-family: 'monotyo';
+text-align:center;
+}
+
 table {
-	width:100%;
-	height:100%;
-    font-family: arial;
-    border-collapse:collapse;
-    font-family: arial, sans-serif;
+    height:100%;
     border-collapse:collapse;
     width: 40%;
+    font-family: 'Open Sans', serif;
+    border: 2px solid black;
+    align:middle
 }
 
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    font-family: 'Open Sans', serif;
+}
+#hold{
+    height:400px;
+}
+div{
+    display:        -moz-inline-stack;
+    display:        inline-block;
+    zoom:            1;
+    display:        inline;
+    vertical-align:middle;
+}
+div.aligner{
+    width:0px;
+    height:100%;
+    overflow:hidden;
 }
