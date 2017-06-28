@@ -22,18 +22,3 @@ td, th {
     padding: 8px;
     font-family: 'Open Sans', serif;
 }
-#hold{
-    height:400px;
-}
-div{
-    display:        -moz-inline-stack;
-    display:        inline-block;
-    zoom:            1;
-    display:        inline;
-    vertical-align:middle;
-}
-div.aligner{
-    width:0px;
-    height:100%;
-    overflow:hidden;
-}
