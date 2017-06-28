@@ -1,16 +1,12 @@
-body {
-    background-color:#1992ad;
-}
-
 h1{
 font-family: 'monotyo';
 text-align:center;
 }
 
 table {
-    height:100%;
+    height:90%;
     border-collapse:collapse;
-    width: 40%;
+    width: 90%;
     font-family: 'Open Sans', serif;
     border: 2px solid black;
     align:middle
@@ -21,4 +17,16 @@ td, th {
     text-align: left;
     padding: 8px;
     font-family: 'Open Sans', serif;
+}
+
+#div1 {
+    background-color: #ccffff;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 50px;
+    margin-top:50px;
+}
+
+#Subbutton {
+   <-!-Here you sould have the centering of the submit button-->
 }
