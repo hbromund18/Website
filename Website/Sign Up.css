@@ -57,3 +57,12 @@ td, th {
     right-margin:10%;
     float:center;
 }
+
+#input2 {
+    height:35px;
+    border-radius:8px;
+    width:80%;
+    left-margin:10%;
+    right-margin:10%;
+    float:center;
+}

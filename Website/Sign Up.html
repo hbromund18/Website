@@ -44,6 +44,7 @@
   				</tr>
   				<tr>
 					<th>Gender:<br></th>
+					<!--We need to make this required-->
 					<td><input type="radio" name="gender" value="male" > Male<br>
 					<input type="radio" name="gender" value="female" > Female<br>
 					<input type="radio" name="gender" value="other" > Other<br></td>
@@ -67,6 +68,19 @@
                     <option value="December">December</option>
                 	</select>
 					Year: <input type="number" name="year" min="1900" max="2017"></td>
+				</tr>
+				<tr>
+					<th>Address<br></th>
+					<td>
+					Address Line 1: <br><input type="text" id="input2" name="ad1"><br>
+					Address Line 2: <br><input type="text" id="input2" name="ad2"><br>
+					City: <br><input type="text" id="input" name="City"><br>
+					State: <br><input type="text" id="input" name="State"><br>
+					Postal Code (Zip): <br><input type="text" id="input" name="psz"><br>
+
+					<!--Here we should do the request for Address-->
+					<!--We need to make this required-->
+				</td>
 				</tr>
 				<tr>
 				<div id="Subbutton" style="text-align:center">
@@ -116,9 +130,30 @@
 			  			window.alert( "Please confirm your Birthday!" ); document.myForm.year.focus() ; 
 			  			return false;
 			  			}
+			  			else if( document.myForm.ad1.value == "" ) { 
+			  			window.alert( "Please confirm your Address!" ); document.myForm.ad1.focus() ; 
+			  			return false;
+			  			}
+			  			else if( document.myForm.ad2.value == "" ) { 
+			  			window.alert( "Please confirm your Address!" ); document.myForm.ad2.focus() ; 
+			  			return false;
+			  			}
+			  			else if( document.myForm.City.value == "" ) { 
+			  			window.alert( "Please confirm your City!" ); document.myForm.City.focus() ; 
+			  			return false;
+			  			}
+			  			else if( document.myForm.State.value =="" ) {
+			  			window.alert("Please confirm your State!"); document.myForm.State.focus() :
+			  			return false;
+			  			}
+			  			else if( document.myForm.psz.value =="" ) {
+			  			window.alert("Please confirm your Postal Code (Zip)!"); document.myForm.psz.focus() :
+			  			return false;
+			  			}
 			  			return( true ); 
 			  			}
 			  	</script>
+			  	<!--We need to make gender and address required-->
 				<br>
 
  			</form>
