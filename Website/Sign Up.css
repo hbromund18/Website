@@ -19,7 +19,7 @@ table {
     width: 90%;
     font-family: 'Open Sans', serif;
     border: 2px solid black;
-    align:middle
+    vertical-align:middle
 }
 
 td, th {
@@ -31,8 +31,8 @@ td, th {
 
 #div1 {
     background-color: #A1D6E2;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 50px;
     margin-top:50px;
 }
@@ -51,4 +51,8 @@ float:center;
     width:100%;
     font-size:20px;
 
+}
+
+#input {
+    border-radius:8px;
 }
