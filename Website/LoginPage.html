@@ -67,6 +67,48 @@ input[type="checkbox"]{
 	margin-left:120px;
 	margin-bottom:30px;
 }
+
+ul {
+            z-index: +1;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #bcbabe;
+            font-family: 'Open Sans', serif;
+            
+            display:table; 
+            margin:0 auto;
+            opacity: .8;
+        }
+        
+        li {
+            float: left;
+        }
+
+        li a {
+            padding-top: 25px;
+            padding-right: 75px;
+            padding-bottom: 25px;
+            padding-left: 75px;
+            display: block;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        li a:hover {
+            background-color: #1992ad;
+            font-weight: bold;
+            
+        }
+
+        .active {
+            background-color: #A1D6E2;
+            
+        }
 </style> 
 </head>
 <body>
@@ -74,6 +116,15 @@ input[type="checkbox"]{
         <img src="Posters\WonderWoman.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Dunkirk.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\SpidermanHomecoming.jpg" style="width: 12.5%;height: 50%; margin-right: 0%;"><img src="Posters\TheLastJedi.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\TheHuntForRedOctober.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\ToKillaMockingbird.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Inception.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\ToyStory3.jpg" style="width: 12.5%;height: 50%; margin-right: 0%;"><img src="Posters\TheDarkKnight.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\RogueOne.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Moana.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Deadpool.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\LaLaLand.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Moonlight.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\TheGreatGatsby.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Alien.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Avengers.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\GuardiansOfTheGalaxy.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\DoctorStrange.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Ant-Man.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\TheKingsSpeech.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\KillCommand.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\IronMan.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\CivilWar.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
 
      </div>
+       <ul>
+  		<li><a href="homepage.html">Home</a></li>
+  		<li><a href="http://www.bbc.com/news">News</a></li>
+  		<li><a href="#contact">Contact</a></li>
+  		<li><a href="#about">About</a></li>
+  		<li style ="float:right"><a href="Sign Up.html">Sign Up</a></li>
+  		<li style="float:right"><a class = "active" href="loginpage.html">Login</a></li>
+
+	</ul>
 <div id="contain" style="opacity: .95">
 
 <form name="loginform" onsubmit="return login()" >
