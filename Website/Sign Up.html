@@ -20,38 +20,36 @@
 
 				<table align="center">
 				<tr>
-					<th>First name<sup style= "color:red">*</sup>:<br></th>
-					<td><input id="input" type="text" name="fn"> <br></td>
+					<td><input id="input" type="text" name="fn" placeholder="First Name"><sup style= "color:red">*</sup> <br></td>
+					<td rowspan="6" width=60%>
+					<br><input type="text" id="input2" name="ad1" placeholder="Address Line 1"><sup style= "color:red">*</sup><br>
+					<br><input type="text" id="input2" name="ad2" placeholder="Address Line 2"><sup style= "color:red">*</sup><br>
+					<br><input type="text" id="input" name="City" placeholder="City"><sup style= "color:red">*</sup><br>
+					<br><input type="text" id="input" name="State" placeholder="State"><sup style= "color:red">*</sup><br>
+					<br><input type="text" id="input" name="psz" placeholder="Postal Code/Zip"><sup style= "color:red">*</sup><br>
+
+				
+				</td>
+  				</tr>
+  				<tr>	
+					<td><input id="input" type="text" name="ln" placeholder="Last Name"><sup style= "color:red">*</sup> <br></td>
   				</tr>
   				<tr>
-					<th>Last name<sup style= "color:red">*</sup>:<br></th>  	
-					<td><input id="input" type="text" name="ln"> <br></td>
+					<td><input id="input" type="text" name="un" placeholder="Username"><sup style= "color:red">*</sup><br></td>
   				</tr>
   				<tr>
-					<th>Username<sup style= "color:red">*</sup>:<br></th>
-					<td><input id="input" type="text" name="un"><br></td>
+					<td><input id="input" type="email" name="em" placeholder="E-Mail"><sup style= "color:red">*</sup><br></td>
   				</tr>
   				<tr>
-					<th>E-Mail<sup style= "color:red">*</sup>:<br></th>
-					<td><input id="input" type="email" name="em"><br></td>
+					<td><input id="input" type="password" name="pw1" placeholder="Password"><sup style= "color:red">*</sup><br></td>
   				</tr>
   				<tr>
-					<th>Password<sup style= "color:red">*</sup>:<br></th>
-					<td><input id="input" type="password" name="pw1"><br></td>
+					<td><input id="input" type="password" name="pw2" placeholder="Confirm Password"><sup style= "color:red">*</sup><br></td> 
   				</tr>
   				<tr>
-					<th>Confirm Password<sup style= "color:red">*</sup>:<br></th>
-					<td><input id="input" type="password" name="pw2"><br></td> 
-  				</tr>
-  				<tr>
-					<th>Gender:<br></th>
-					<!--We need to make this required-->
 					<td><input type="radio" name="gender" value="male" > Male<br>
 					<input type="radio" name="gender" value="female" > Female<br>
 					<input type="radio" name="gender" value="other" > Other<br></td>
-				</tr>
-				<tr>
-					<th>Birthday<sup style= "color:red">*</sup>:<br></th>
 					<td>Day:<input type="number" name="day" min="1" max="31">
 					Month:<select name="month">
                     <option value=""></option>
@@ -71,17 +69,7 @@
 					Year: <input type="number" name="year" min="1900" max="2017"></td>
 				</tr>
 				<tr>
-					<th>Address<sup style= "color:red">*</sup>:<br></th>
-					<td>
-					Address Line 1<sup style= "color:red">*</sup>: <br><input type="text" id="input2" name="ad1"><br>
-					Address Line 2<sup style= "color:red">*</sup>: <br><input type="text" id="input2" name="ad2"><br>
-					City<sup style= "color:red">*</sup>: <br><input type="text" id="input" name="City"><br>
-					State<sup style= "color:red">*</sup>: <br><input type="text" id="input" name="State"><br>
-					Postal Code (Zip)<sup style= "color:red">*</sup>: <br><input type="text" id="input" name="psz"><br>
-
-					<!--Here we should do the request for Address-->
-					<!--We need to make this required-->
-				</td>
+					
 				</tr>
 				<tr>
 				<div id="Subbutton" style="text-align:center">
@@ -91,64 +79,8 @@
 				</table>
 				<script>
  					function validate() { 
-						if( document.myForm.fn.value == "" ) { 
-			 	 		window.alert( "Please provide your first name!" ); document.myForm.fn.focus() ; 
-			  			return false;
-			  			} 
-			  			else if( document.myForm.ln.value == "" ) { 
-			  			window.alert( "Please provide your last name!" ); document.myForm.ln.focus() ; 
-			  			return false;
-			  			}
-			  			else if( document.myForm.un.value == "" ) { 
-			  			window.alert( "Please provide your username!" );document.myForm.un.focus() ;
-			  			return false;
-			  			} 
-			  			else if(document.myForm.em.value == "" ) { 
-			  			window.alert( "Please provide your Email!" ); document.myForm.em.focus() ; 
-			  			return false; 
-			  			} 
-			  			else if( document.myForm.pw1.value == "" ) { 
-			  			window.alert( "Please provide your password!" ); document.myForm.pw1.focus() ;
-			  			return false;
-			  			} 
-			  			else if( document.myForm.pw2.value == "" ) { 
-			  			window.alert( "Please confirm your password!" ); document.myForm.pw2.focus() ; 
-			  			return false;
-			  			}
-			  			else if( document.myForm.pw1.value != document.myForm.pw2.value ) { 
+						if( document.myForm.pw1.value != document.myForm.pw2.value ) { 
 			  			window.alert( "Please make sure both password are the same!" ); document.myForm.pw1.focus() && document.myForm.pw2.focus ;
-			  			return false;
-			  			}
-			  			else if( document.myForm.day.value == "" ) { 
-			  			window.alert( "Please confirm your Birthday!" ); document.myForm.day.focus() ; 
-			  			return false;
-			  			}
-			  			else if( document.myForm.month.value == "" ) { 
-			  			window.alert( "Please confirm your Birthday!" ); document.myForm.month.focus() ; 
-			  			return false;
-			  			}
-			  			else if( document.myForm.year.value == "" ) { 
-			  			window.alert( "Please confirm your Birthday!" ); document.myForm.year.focus() ; 
-			  			return false;
-			  			}
-			  			else if( document.myForm.ad1.value == "" ) { 
-			  			window.alert( "Please confirm your Address!" ); document.myForm.ad1.focus() ; 
-			  			return false;
-			  			}
-			  			else if( document.myForm.ad2.value == "" ) { 
-			  			window.alert( "Please confirm your Address!" ); document.myForm.ad2.focus() ; 
-			  			return false;
-			  			}
-			  			else if( document.myForm.City.value == "" ) { 
-			  			window.alert( "Please confirm your City!" ); document.myForm.City.focus() ; 
-			  			return false;
-			  			}
-			  			else if( document.myForm.State.value =="" ) {
-			  			window.alert("Please confirm your State!"); document.myForm.State.focus() ;
-			  			return false;
-			  			}
-			  			else if( document.myForm.psz.value =="" ) {
-			  			window.alert("Please confirm your Postal Code (Zip)!"); document.myForm.psz.focus() ;
 			  			return false;
 			  			}
 			  			return( true ); 
