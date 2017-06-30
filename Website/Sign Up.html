@@ -7,12 +7,38 @@
 		<body>
 		<!--DO NOT TOUCH, background images-->
 		 <div style="position:absolute; z-index: -1;  -webkit-filter: blur(5px);  filter: blur(5px);">
-        <img src="Posters\WonderWoman.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Dunkirk.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\SpidermanHomecoming.jpg" style="width: 12.5%;height: 50%; margin-right: 0%;"><img src="Posters\TheLastJedi.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\TheHuntForRedOctober.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\ToKillaMockingbird.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Inception.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\ToyStory3.jpg" style="width: 12.5%;height: 50%; margin-right: 0%;"><img src="Posters\TheDarkKnight.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\RogueOne.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Moana.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Deadpool.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\LaLaLand.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Moonlight.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\TheGreatGatsby.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Alien.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\Avengers.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;"><img src="Posters\GuardiansOfTheGalaxy.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\WonderWoman.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\Dunkirk.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\SpidermanHomecoming.jpg" style="width: 12.5%;height: 50%; margin-right: 0%;">
+        <img src="Posters\TheLastJedi.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\TheHuntForRedOctober.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\ToKillaMockingbird.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\Inception.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\ToyStory3.jpg" style="width: 12.5%;height: 50%; margin-right: 0%;">
+        <img src="Posters\TheDarkKnight.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\RogueOne.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\Moana.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\Deadpool.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\LaLaLand.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\Moonlight.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\TheGreatGatsby.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\Alien.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\Avengers.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
+        <img src="Posters\GuardiansOfTheGalaxy.jpg" style="width: 12.5%; height: 50%; margin-right: 0%;">
     </div>
+
+    <ul>
+  		<li><a href="homepage.html">Home</a></li>
+  		<li><a href="http://www.bbc.com/news">News</a></li>
+  		<li><a href="#contact">Contact</a></li>
+  		<li><a href="#about">About</a></li>
+
+	</ul>
 			<div id="div1">		
 
  			<br>
 			<h1> Sign Up </h1>
+			<p align="center"> If you already have an account then <a href="LoginPage.html">Log In</a> </p> 			
 			<hr>
 			<p> <b><ins>Fields with a <sup style= "color:red">*</sup> are required.</ins></b></p>
 				<form name= "myForm" onsubmit="return validate()"  method='get' align="center">
@@ -70,13 +96,13 @@
 					Year: <input type="number" name="year" min="1900" max="2017"></td>
 				</tr>
 				<tr>
-					<th>Address<br></th>
+					<th>Address<sup style= "color:red">*</sup>:<br></th>
 					<td>
-					Address Line 1: <br><input type="text" id="input2" name="ad1"><br>
-					Address Line 2: <br><input type="text" id="input2" name="ad2"><br>
-					City: <br><input type="text" id="input" name="City"><br>
-					State: <br><input type="text" id="input" name="State"><br>
-					Postal Code (Zip): <br><input type="text" id="input" name="psz"><br>
+					Address Line 1<sup style= "color:red">*</sup>: <br><input type="text" id="input2" name="ad1"><br>
+					Address Line 2<sup style= "color:red">*</sup>: <br><input type="text" id="input2" name="ad2"><br>
+					City<sup style= "color:red">*</sup>: <br><input type="text" id="input" name="City"><br>
+					State<sup style= "color:red">*</sup>: <br><input type="text" id="input" name="State"><br>
+					Postal Code (Zip)<sup style= "color:red">*</sup>: <br><input type="text" id="input" name="psz"><br>
 
 					<!--Here we should do the request for Address-->
 					<!--We need to make this required-->
@@ -115,7 +141,7 @@
 			  			return false;
 			  			}
 			  			else if( document.myForm.pw1.value != document.myForm.pw2.value ) { 
-			  			window.alert( "Please make sure both password are the same!" ); document.myForm.pw1.focus() ; document.myForm.pw2.focus ;
+			  			window.alert( "Please make sure both password are the same!" ); document.myForm.pw1.focus() && document.myForm.pw2.focus ;
 			  			return false;
 			  			}
 			  			else if( document.myForm.day.value == "" ) { 
@@ -143,11 +169,11 @@
 			  			return false;
 			  			}
 			  			else if( document.myForm.State.value =="" ) {
-			  			window.alert("Please confirm your State!"); document.myForm.State.focus() :
+			  			window.alert("Please confirm your State!"); document.myForm.State.focus() ;
 			  			return false;
 			  			}
 			  			else if( document.myForm.psz.value =="" ) {
-			  			window.alert("Please confirm your Postal Code (Zip)!"); document.myForm.psz.focus() :
+			  			window.alert("Please confirm your Postal Code (Zip)!"); document.myForm.psz.focus() ;
 			  			return false;
 			  			}
 			  			return( true ); 
@@ -157,8 +183,6 @@
 				<br>
 
  			</form>
- 			<p align="center"> If you already have an account then <a href="LoginPage.html">Log In</a> </p>
- 			<br>
- 			</div>
+ 			
 		</body>
 	</html>
