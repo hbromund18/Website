@@ -2,7 +2,12 @@ h1{
 font-family: 'monotyo';
 text-align:center;
 }
-
+ img {
+             z-index: -100;
+             
+             white-space: nowrap;
+            
+		 }    
 hr{
     height:1px;
     background-color:#000000;
