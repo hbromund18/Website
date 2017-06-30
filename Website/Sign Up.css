@@ -66,3 +66,38 @@ td, th {
     right-margin:10%;
     float:center;
 }
+
+ul {
+            z-index: +1;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #bcbabe;
+            font-family: 'Open Sans', serif;
+            
+            display:table; 
+            margin:0 auto;
+            opacity: .8;
+        }
+        
+        li {
+            float: left;
+        }
+
+        li a {
+            padding-top: 25px;
+            padding-right: 75px;
+            padding-bottom: 25px;
+            padding-left: 75px;
+            display: block;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        li a:hover {
+            background-color: #1992ad;
+            font-weight: bold;
