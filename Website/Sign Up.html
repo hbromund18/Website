@@ -27,57 +27,43 @@
 			<p align="center"> If you already have an account then <a href="LoginPage.html">Log In</a> </p> 			
 			<hr>
 			<p> <b><ins>Fields with a <sup style= "color:red">*</sup> are required.</ins></b></p>
-				<form name= "myForm" onsubmit="return validate()"  method='get' align="center">
+				<form name= "myForm" onsubmit="return validate()" action="Signed_Home.html" method='get' align="center">
 
 				<table align="center">
 				<tr>
-					<td><input id="input" type="text" name="fn" placeholder="First Name"><sup style= "color:red">*</sup> <br></td>
+					<td><input id="input" type="text" name="fn" placeholder="First Name" required><sup style= "color:red">*</sup> <br></td>
 					<td rowspan="6" width=60%>
-					<br><input type="text" id="input2" name="ad1" placeholder="Address Line 1"><sup style= "color:red">*</sup><br>
-					<br><input type="text" id="input2" name="ad2" placeholder="Address Line 2"><sup style= "color:red">*</sup><br>
-					<br><input type="text" id="input" name="City" placeholder="City"><sup style= "color:red">*</sup><br>
-					<br><input type="text" id="input" name="State" placeholder="State"><sup style= "color:red">*</sup><br>
-					<br><input type="text" id="input" name="psz" placeholder="Postal Code/Zip"><sup style= "color:red">*</sup><br>
+					<br><input type="text" id="input2" name="ad1" placeholder="Address Line 1" required><sup style= "color:red">*</sup><br>
+					<br><input type="text" id="input2" name="ad2" placeholder="Address Line 2" required><sup style= "color:red">*</sup><br>
+					<br><input type="text" id="input" name="City" placeholder="City" required><sup style= "color:red">*</sup><br>
+					<br><input type="text" id="input" name="State" placeholder="State" required><sup style= "color:red">*</sup><br>
+					<br><input type="text" id="input" name="psz" placeholder="Postal Code/Zip" required><sup style= "color:red">*</sup><br>
 
 				
 				</td>
   				</tr>
   				<tr>	
-					<td><input id="input" type="text" name="ln" placeholder="Last Name"><sup style= "color:red">*</sup> <br></td>
+					<td><input id="input" type="text" name="ln" placeholder="Last Name" required><sup style= "color:red">*</sup> <br></td>
   				</tr>
   				<tr>
-					<td><input id="input" type="text" name="un" placeholder="Username"><sup style= "color:red">*</sup><br></td>
+					<td><input id="input" type="text" name="un" placeholder="Username" required><sup style= "color:red">*</sup><br></td>
   				</tr>
   				<tr>
-					<td><input id="input" type="email" name="em" placeholder="E-Mail"><sup style= "color:red">*</sup><br></td>
+					<td><input id="input" type="email" name="em" placeholder="E-Mail" required><sup style= "color:red">*</sup><br></td>
   				</tr>
   				<tr>
-					<td><input id="input" type="password" name="pw1" placeholder="Password"><sup style= "color:red">*</sup><br></td>
+					<td><input id="input" type="password" name="pw1" placeholder="Password" required><sup style= "color:red">*</sup><br></td>
   				</tr>
   				<tr>
-					<td><input id="input" type="password" name="pw2" placeholder="Confirm Password"><sup style= "color:red">*</sup><br></td> 
+					<td><input id="input" type="password" name="pw2" placeholder="Confirm Password" required><sup style= "color:red">*</sup><br></td> 
   				</tr>
   				<tr>
 					<td><input type="radio" name="gender" value="male" > Male<br>
 					<input type="radio" name="gender" value="female" > Female<br>
 					<input type="radio" name="gender" value="other" > Other<br></td>
-					<td>Day:<input type="number" name="day" min="1" max="31">
-					Month:<select name="month">
-                    <option value=""></option>
-                    <option value="January">January</option>
-                    <option value="February">February</option>
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May">May</option>
-                    <option value="June">June</option>
-                    <option value="July">July</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                	</select>
-					Year: <input type="number" name="year" min="1900" max="2017"></td>
+					<td>Day:<input type="number" name="day" min="1" max="31" required>
+					Month:<input type="number" name="month" min="1" max="12" required>
+					Year: <input type="number" name="year" min="1900" max="2017" required></td>
 				</tr>
 				<tr>
 					
@@ -94,7 +80,11 @@
 			  			window.alert( "Please make sure both password are the same!" ); document.myForm.pw1.focus() && document.myForm.pw2.focus ;
 			  			return false;
 			  			}
-			  			return( true ); 
+			  			else{
+			  				return ( true );
+			  				window.location = "Signed_Home.html"
+			  			} 
+			  			return( true );
 			  			}
 			  	</script>
 				<br>
