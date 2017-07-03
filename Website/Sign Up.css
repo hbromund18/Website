@@ -51,12 +51,19 @@ td, th {
     margin-top:10px;
     margin-bottom:10px;
     border-radius:20px;
-    background-color:#1992AD;
-    color:#dddddd;
+    background-color:#dddddd;
+    color:#1992AD;
+    border: 2px solid #1992AD;
     height:60px;
     width:100%;
     font-size:20px;
 
+}
+
+#subbut:hover{
+     background-color:#1992AD;
+     color:#dddddd;
+     border: 2px solid #1992AD;
 }
 
 #input {
