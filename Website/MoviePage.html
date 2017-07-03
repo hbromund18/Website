@@ -7,6 +7,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default" style="background-color: lightblue">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Movie Meetup</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Friends</a></li>
+                    <li><a href="#">Groups</a></li>
+                    <li><a href="#">My Movies <span class="glyphicon glyphicon-film"></span></a> </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-login"></span> Sign Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br /><br /><br />
     <div class="container">
         
         <!-- Left-aligned media object -->
@@ -15,11 +36,57 @@
                 <img src="Posters\WonderWoman.jpg" class="media-object" style="width:300px">
             </div>
             <div class="media-body">
-                <h4 class="media-heading">Left-aligned</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h1 class="media-heading">Wonder Woman</h1>
+                <h4>Director: <a>Patty Jenkins</a> </h4>
+                <h4>Cast: <a>Gal Gadot</a>, <a>Chris Pine</a>, <a> Robin Wright</a></h4>
+                <h4>Rating: PG-13</h4>
+                <h4>Runtime: 2 hours 21 minutes</h4>
+                <br />
+                <h4>Summary:</h4>
+                <p>Before she was Wonder Woman (Gal Gadot), she was Diana, princess of the Amazons, trained to be an unconquerable warrior. Raised on a sheltered island paradise, Diana meets an American pilot (Chris Pine) who tells her about the massive conflict that's raging in the outside world. Convinced that she can stop the threat, Diana leaves her home for the first time. Fighting alongside men in a war to end all wars, she finally discovers her full powers and true destiny.</p>
             </div>
         </div>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="home_carousel" class="carousel slide" data-ride="carousel">
+                        <!-- indicators dot nav -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#home_carousel" data-slide-to="0"></li>
+                            <li data-target="#home_carousel" data-slide-to="1"></li>
+                        </ol>
+                        <!-- wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/VSB4wGIdDwo" frameborder="0" allowfullscreen></iframe>
+                                <div class="carousel-caption">
+                                   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="http://centerforcreativemedia.com/wp-content/uploads/2015/07/Ticket2-2400x1200.jpg" alt="Movie Ticket">
+                                <div class="carousel-caption">
+                                    <h1>
+                                        Find friends and <br> invite them to movies
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- controls buttons-->
+                        <a class="left carousel-control" href="#home_carousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span>
+                        </a>
+                        <a class="right carousel-control" href="#home_carousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VSB4wGIdDwo" frameborder="0" allowfullscreen></iframe>
 
 
 
