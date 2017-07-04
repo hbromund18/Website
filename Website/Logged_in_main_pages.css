@@ -7,5 +7,10 @@ body{
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
-.navbar {
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
