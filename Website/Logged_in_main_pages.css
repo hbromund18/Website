@@ -8,12 +8,12 @@ body{
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
-.navbar{
+.navbar-fixed-top{
 	text-decoration-color: rgb(500,500,500);
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(50,0,0,.66);
 }
 .navbar-brand{	
 	color: white;
@@ -22,6 +22,7 @@ body{
     text-decoration: none;
 }
 li a {
+    background-color: rgba(200,200,200,0);
     color: white;
     text-align: center;
     padding: 14px 16px;
