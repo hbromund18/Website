@@ -143,16 +143,16 @@ ul {
 	<script>
 	function login(){
 		console.log("hello");
-		if (document.loginform.username.value !== "Batman"){
-			window.alert("Username does not exist."); 
-			document.loginform.username.focus();
+		if (document.loginform.username.value !== "Batman" || document.loginform.password.value !== "Wayne"){
+			window.alert("Username or password are wrong."); 
+			document.loginform.username.focus(); document.loginform.password.focus();
 			return false;
 		} 
-		else (document.loginform.username.value == "Batman"){
+		else if(document.loginform.username.value == "Batman" && document.loginform.password.value == "Wayne")
 			return true;
-		}
+		
 
-	}
+	};
 	</script>
 </form>
 </div>
