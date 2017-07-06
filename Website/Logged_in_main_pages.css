@@ -35,12 +35,13 @@ li a {
 }
 
 #tbl1{
-    text-decoration-color: rgb(500,500,500);
+    text-decoration-color: rgba(500,500,500);
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    overflow-x: auto;
+    background-color: rgba(500,500,500,.3);
     border: 1px solid white;
+    height: 50%;
 }
 
 #tbl1-brand{
