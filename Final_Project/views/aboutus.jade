@@ -7,33 +7,79 @@ html
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
     link(rel='stylesheet', type='text/css', href='Logged_in_main_pages.css')
+    style.
+      body{
+      padding-top: 60px;
+      background-image: url(https://themighty.com/wp-content/uploads/2016/06/Cinema-Seats_1280x640_acf_cropped.jpg);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      }
+      .navbar-fixed-top{
+      text-decoration-color: rgb(500,500,500);
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(50,0,0,.66);
+      }
+      .navbar-brand{
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+      li a {
+      background-color: rgba(200,200,200,0);
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+      #tbl1{
+      text-decoration-color: rgba(500,500,500);
+      margin: 0;
+      padding: 0;
+      overflow-x: auto;
+      background-color: rgba(500,500,500,.3);
+      border: 1px solid white;
+      height: 50%;
+      }
+      #tbl1-brand{
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
   body
     // Nav Bar Starts
     div
       nav.navbar-fixed-top
         .container-fluid
           .navbar-header
-            a.navbar-brand(href='/signedhome') Movie Meetup
+            a.navbar-brand(href='Signed_Home.html') Movie Meetup
           ul.nav.navbar-nav
+            li.active
+              a(href='Signed_Home.html') Home
             li
-              a(href='/signedhome') Home
+              a(href='Friends_Page.html') Friends
             li
-              a(href='/friends') Friends
+              a(href='GroupPage.html') Groups
             li
-              a(href='/groups') Groups
-            li
-              a(href='/moviepage')
+              a(href='MoviePage.html')
                 | My Movies 
                 span.glyphicon.glyphicon-film
             li
-              a(href='/aboutus') About Us
+              a(href='AboutUs.html') About Us
           ul.nav.navbar-nav.navbar-right
             li
               a(href='#')
                 span.glyphicon.glyphicon-user
                 |  My Account
             li
-              a(href='/index')
+              a(href='Homepage.html')
                 span.glyphicon.glyphicon-login
                 |  Sign Out
     // Nav Bar Ends

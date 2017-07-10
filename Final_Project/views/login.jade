@@ -99,6 +99,88 @@ html
       .active {
       background-color: #A1D6E2;
       }
+      img {
+      z-index: -100;
+      white-space: nowrap;
+      }
+      html{
+      height: 100%;
+      }
+      body{
+      height: 100%;
+      width: 100%;
+      }
+      .nospace{
+      font-size: 0px;
+      }
+      h1{
+      font-family: 'Ubuntu', serif;
+      font-size: 50px;
+      }
+      h4 {
+      font-family: 'Open Sans', serif;
+      color: #000;
+      }
+      ul {
+      z-index: +1;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #bcbabe;
+      font-family: 'Open Sans', serif;
+      display:table;
+      margin:0 auto;
+      opacity: .8;
+      }
+      li {
+      float: left;
+      }
+      li a {
+      padding-top: 25px;
+      padding-right: 75px;
+      padding-bottom: 25px;
+      padding-left: 75px;
+      display: block;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      text-decoration: none;
+      color: #000;
+      }
+      li a:hover {
+      background-color: #1992ad;
+      font-weight: bold;
+      }
+      .active {
+      background-color: #A1D6E2;
+      }
+      .vertical-menu {
+      width: 200px;
+      text-align: center;
+      display:table;
+      margin:0 auto;
+      }
+      .vertical-menu a {
+      font-family: 'Open Sans', serif;
+      background-color: #bcbabe;
+      color: black;
+      display: block;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      text-decoration: none;
+      opacity: .8;
+      font-size: 30px;
+      }
+      .vertical-menu a:hover {
+      background-color: #1992ad;
+      font-weight: bold;
+      }
+      .vertical-menu .active {
+      background-color: #A1D6E2;
+      }
   body
     div(style='position:absolute; z-index: -1;  -webkit-filter: blur(5px);  filter: blur(5px);')
       img(src='Posters\WonderWoman.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
@@ -127,7 +209,7 @@ html
       img(src='Posters\CivilWar.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
     ul
       li
-        a(href='/') Home
+        a(href='homepage.html') Home
       li
         a(href='http://www.bbc.com/news') News
       li
@@ -135,11 +217,11 @@ html
       li
         a(href='#about') About
       li(style='float:right')
-        a(href='/signup') Sign Up
+        a(href='Sign Up.html') Sign Up
       li(style='float:right')
-        a.active(href='/login') Login
+        a.active(href='loginpage.html') Login
     #contain(style='opacity: .95')
-      form(name='loginform', onsubmit='return login()', action='/authenticate' method='post')
+      form(name='loginform', onsubmit='return login()', action='Signed_Home.html')
         p(align='center')
           font(size='+3') Log In
         p
@@ -154,7 +236,17 @@ html
             label(for='checkbox') Keep me logged in
             input(type='Submit', value='Login')
           // lower
-          
+          script.
+            function login(){
+            console.log("hello");
+            if (document.loginform.username.value !== "Batman" || document.loginform.password.value !== "Wayne"){
+            window.alert("Username or password are wrong.");
+            document.loginform.username.focus(); document.loginform.password.focus();
+            return false;
+            }
+            else if(document.loginform.username.value == "Batman" && document.loginform.password.value == "Wayne")
+            return true;
+            };
     br
     br
     br
@@ -164,7 +256,7 @@ html
     #forgotpassword(align='center', style='opacity: .8')
       // password forgot area
       font(size='-1')
-        a(href='/signup')  Forgot password?
+        a(href='Sign Up.html')  Forgot password?
         br
-        | 	Don't have an account? 
-        a(href='/signup')  Sign up now 
+        |   Don't have an account? 
+        a(href='Sign%20Up.html')  Sign up now 
