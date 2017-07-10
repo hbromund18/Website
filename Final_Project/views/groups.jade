@@ -1,0 +1,62 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', type='text/css', href='Logged_in_main_pages.css')
+  body
+    // Nav Bar Starts
+    div
+      nav.navbar-fixed-top
+        .container-fluid
+          .navbar-header
+            a.navbar-brand(href='/signedhome') Movie Meetup
+          ul.nav.navbar-nav
+            li
+              a(href='/signedhome') Home
+            li
+              a(href='/friends') Friends
+            li
+              a(href='/groups') Groups
+            li
+              a(href='/moviepage')
+                | My Movies 
+                span.glyphicon.glyphicon-film
+            li
+              a(href='/aboutus') About Us
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#')
+                span.glyphicon.glyphicon-user
+                |  My Account
+            li
+              a(href='/index')
+                span.glyphicon.glyphicon-login
+                |  Sign Out
+    // Nav Bar Ends
+    .container
+      div(style='position:fixed; margin-bottom: 20px;')
+        .jumbotron(style='background-color: rgba(300, 300, 300, 0.5); padding:10px;')
+          h2(style='opacity: 1; font-size: 400%; text-align: center') Your Groups
+    .container-fluid(style='margin-top: 120px; height: 50%')
+      div(style='overflow-x:auto;')
+        table#tbl1.table.table-hover
+          tbody(style='color:white; color-hover:black')
+            tr
+              td Stanford Group
+              td 10 Members
+              td Wonder Woman
+            tr
+              td Calc Squad
+              td 3 members
+              td War for the Planet of the Apes
+            tr
+              td FOB
+              td 12 Members
+              td Cars 3
+    button.btn-lg(style='background-color:white;position:fixed;bottom:50px;right:100px;margin:0;padding:5px 5px;') Create Group
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='js/bootstrap.min.js')

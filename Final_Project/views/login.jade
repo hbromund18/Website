@@ -127,7 +127,7 @@ html
       img(src='Posters\CivilWar.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
     ul
       li
-        a(href='homepage.html') Home
+        a(href='/') Home
       li
         a(href='http://www.bbc.com/news') News
       li
@@ -135,9 +135,9 @@ html
       li
         a(href='#about') About
       li(style='float:right')
-        a(href='Sign Up.html') Sign Up
+        a(href='/signup') Sign Up
       li(style='float:right')
-        a.active(href='loginpage.html') Login
+        a.active(href='/login') Login
     #contain(style='opacity: .95')
       form(name='loginform', onsubmit='return login()', action='/authenticate' method='post')
         p(align='center')

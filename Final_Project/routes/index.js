@@ -55,7 +55,7 @@ router.post('/authenticate', function(req, res){
 
        
 		 // Redirect to the homepage
-            res.redirect("signup");
+            res.redirect("signedhome");
          
        } else {
            
@@ -69,6 +69,28 @@ router.post('/authenticate', function(req, res){
     });
 
   });
+
+router.get('/signedhome', function(req, res, next) {
+  res.render('signedhome', { title: 'signedhome' });
+});
+
+router.get('/aboutus', function(req, res, next) {
+  res.render('aboutus', { title: 'aboutus' });
+});
+
+router.get('/friends', function(req, res, next) {
+  res.render('friends', { title: 'friends' });
+});
+router.get('/groups', function(req, res, next) {
+  res.render('groups', { title: 'groups' });
+});
+router.get('/moviepage', function(req, res, next) {
+  res.render('moviepage', { title: 'moviepage' });
+});
+router.get('/movies', function(req, res, next) {
+  res.render('movies', { title: 'movies' });
+});
+
 
 
 module.exports = router;

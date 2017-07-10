@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', type='text/css', href='Logged_in_main_pages.css')
+  body
+    // Nav Bar Starts
+    div
+      nav.navbar-fixed-top
+        .container-fluid
+          .navbar-header
+            a.navbar-brand(href='/signedhome') Movie Meetup
+          ul.nav.navbar-nav
+            li
+              a(href='/signedhome') Home
+            li
+              a(href='/friends') Friends
+            li
+              a(href='/groups') Groups
+            li
+              a(href='/moviepage')
+                | My Movies 
+                span.glyphicon.glyphicon-film
+            li
+              a(href='/aboutus') About Us
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#')
+                span.glyphicon.glyphicon-user
+                |  My Account
+            li
+              a(href='/index')
+                span.glyphicon.glyphicon-login
+                |  Sign Out
+    // Nav Bar Ends
+    .container
+      form
+        .input-group
+          input.form-control(type='text', placeholder='Search')
+          .input-group-btn
+            button.btn.btn-default(type='submit')
+              i.glyphicon.glyphicon-search
+    // Standard Bootstrap Stuff
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='js/bootstrap.min.js')

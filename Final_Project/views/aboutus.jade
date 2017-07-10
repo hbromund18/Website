@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', type='text/css', href='Logged_in_main_pages.css')
+  body
+    // Nav Bar Starts
+    div
+      nav.navbar-fixed-top
+        .container-fluid
+          .navbar-header
+            a.navbar-brand(href='/signedhome') Movie Meetup
+          ul.nav.navbar-nav
+            li
+              a(href='/signedhome') Home
+            li
+              a(href='/friends') Friends
+            li
+              a(href='/groups') Groups
+            li
+              a(href='/moviepage')
+                | My Movies 
+                span.glyphicon.glyphicon-film
+            li
+              a(href='/aboutus') About Us
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#')
+                span.glyphicon.glyphicon-user
+                |  My Account
+            li
+              a(href='/index')
+                span.glyphicon.glyphicon-login
+                |  Sign Out
+    // Nav Bar Ends
+    div
+      h1(align='center', style='color:white') This Webpage was created by Benjamin Chin, Hugh Bromund, and Nabih Estefan
+    div(style='vertical-align: center; float: middle;', align='center')
+      img(src='Posters/Logo.jpeg', alt='Website Logo')
+      p(style='color:white; text-align: center; margin-left: -7.5%')
+        | To Contact us you can send and email to us:
+        br
+        |    estefan.nabih@gmail.com
+        br
+        |    hughbromund44@gmail.com
+        br
+        |    benjaminchin75@yahoo.com
+    br
+    br
+    br

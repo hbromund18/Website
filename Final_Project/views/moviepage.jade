@@ -1,0 +1,96 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', type='text/css', href='Logged_in_main_pages.css')
+    style.
+      body{
+      color:white;
+      }
+      #img1{
+      margin-left: 15%;
+      width:20%;
+      }
+      #img2{
+      width:20%;
+      float:middle;
+      align-content: center;
+      margin-left: 5%
+      }
+      #img3{
+      width:20%;
+      float:right;
+      margin-right: 15%
+      }
+      #moviediv1{
+      margin-left: 15%;
+      margin-right:15%;
+      }
+      =
+  body
+    // Nav Bar Starts
+    div
+      nav.navbar-fixed-top
+        .container-fluid
+          .navbar-header
+            a.navbar-brand(href='/signedhome') Movie Meetup
+          ul.nav.navbar-nav
+            li
+              a(href='/signedhome') Home
+            li
+              a(href='/friends') Friends
+            li
+              a(href='/groups') Groups
+            li
+              a(href='/moviepage')
+                | My Movies 
+                span.glyphicon.glyphicon-film
+            li
+              a(href='/aboutus') About Us
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#')
+                span.glyphicon.glyphicon-user
+                |  My Account
+            li
+              a(href='/index')
+                span.glyphicon.glyphicon-login
+                |  Sign Out
+    // Nav Bar Ends
+    a(href='/movies')
+      img#img1(src='Final_Project\public\images\tarzan.jpeg')
+    a(href='/movies')
+      img#img2(src='Final_Project\public\images\wonderwoman.jpeg')
+    a(href='/movies')
+      img#img3(src='Final_Project\public\images\assassins.jpeg')
+    br
+    br
+    br
+    br
+    br
+    a(href='/movies')
+      img#img1(src='Final_Project\public\images\homecoming.jpeg')
+    a(href='/movies')
+      img#img2(src='Final_Project\public\images\warfortheplanet.jpeg')
+    a(href='/movies')
+      img#img3(src='Final_Project\public\images\it.jpeg')
+    br
+    br
+    br
+    br
+    br
+    a(href='/movies')
+      img#img1(src='Final_Project\public\images\guardians.jpeg')
+    a(href='/movies')
+      img#img2(src='Final_Project\public\images\cars3.jpeg')
+    a(href='/movies')
+      img#img3(src='Final_Project\public\images\murder.jpeg')
+    br
+    br
+    br
+    br
+    br

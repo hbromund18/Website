@@ -1,126 +1,69 @@
 doctype html
-html(lang='en')
+html
   head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-    link(rel='stylesheet', type='text/css', href='Logged_in_main_pages.css')
-    style.
-      #img1 {
-      float:right;
-      margin-top:-15px;
-      width:300px;
-      vertical-align:top;
-      }
-      #div1{
-      margin-left: -15px;
-      }
-  body
-    // Nav Bar Starts
-    div
-      nav.navbar-fixed-top
-        .container-fluid
-          .navbar-header
-            a.navbar-brand(href='Signed_Home.html') Movie Meetup
-          ul.nav.navbar-nav
-            li.active
-              a(href='Signed_Home.html') Home
-            li
-              a(href='Friends_Page.html') Friends
-            li
-              a(href='GroupPage.html') Groups
-            li
-              a(href='MoviePage.html')
-                | My Movies 
-                span.glyphicon.glyphicon-film
-            li
-              a(href='AboutUs.html') About Us
-          ul.nav.navbar-nav.navbar-right
-            li
-              a(href='#')
-                span.glyphicon.glyphicon-user
-                |  My Account
-            li
-              a(href='Homepage.html')
-                span.glyphicon.glyphicon-login
-                |  Sign Out
-    // Nav Bar Ends
-    .container
-      .jumbotron(style='background-color: rgba(300, 300, 300, 0.5)')
-        img#img1(src='Posters/Logo.jpeg', alt='Website Logo')
-        h1(style='opacity: 1') Movie Meetup
-        h3
-          | A movie with your friends, without all the hastle.  
-          br
-          |     Find friends and invite them to the movies
-      // Carousel Starts Here
-      #div1.container
-        .row
-          .col-sm-12
-            #home_carousel.carousel.slide(data-ride='carousel')
-              // indicators dot nav
-              ol.carousel-indicators
-                li(data-target='#home_carousel', data-slide-to='0')
-                li(data-target='#home_carousel', data-slide-to='1')
-                li(data-target='#home_carousel', data-slide-to='2')
-                li(data-target='#home_carousel', data-slide-to='3')
-                li(data-target='#home_carousel', data-slide-to='4')
-              // wrapper for slides
-              .carousel-inner(role='listbox')
-                .item.active
-                  a(href='##')
-                    img(src='http://hdqwalls.com/download/2016-the-legend-of-tarzan-ap-2048x1152.jpg', alt='The Legend of Tarzan')
-                  .carousel-caption
-                    h1
-                      | The Legend 
-                      br
-                      | of Tarzan
-                .item
-                  a(href='WonderWoman.html')
-                    img(src='http://hdqwalls.com/download/wonder-woman-2017-poster-img-2048x1152.jpg', alt='Wonder Woman')
-                  .carousel-caption
-                    h1
-                      | Wonder
-                      br
-                      | Woman
-                .item
-                  a(href='##')
-                    img(src='http://hdqwalls.com/download/assassins-creed-movie-4k-qu-2048x1152.jpg', alt="Assassin's Creed")
-                  .carousel-caption
-                    h1
-                      | Assassin's
-                      br
-                      | Creed
-                .item
-                  a(href='##')
-                    img(src='https://images2.alphacoders.com/837/837434.jpg', alt='Spiderman:Homecoming')
-                  .carousel-caption
-                    h1
-                      | Spiderman:
-                      br
-                      | Homecoming
-                .item
-                  a(href='##')
-                    img(src='http://www.awardsdaily.com/wp-content/uploads/2017/06/apes.jpg', alt='War for the Planet of the Apes')
-                  .carousel-caption
-                    h1
-                      | War for 
-                      br
-                      |  the Planet 
-                      br
-                      |  of the Apes
-              // controls buttons
-              a.left.carousel-control(href='#home_carousel', role='button', data-slide='prev')
-                span.glyphicon.glyphicon-chevron-left(aria-hidden='true')  
-              a.right.carousel-control(href='#home_carousel', role='button', data-slide='next')
-                span.glyphicon.glyphicon-chevron-right(aria-hidden='true')  
-      br
-      br
-      br
-      br
-      br
-      // jQuery (necessary for Bootstrap's JavaScript plugins)
-      script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-      script(src='js/bootstrap.min.js')
+    title  Homepage 
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='public/stylesheets/stylesheet.css')
+  body(bgcolor='#f1f1f2', style='height:100%; width:100%;')
+    // This is the Div that creates the background and blurs the images
+    div(style='position:absolute; z-index: -1;  -webkit-filter: blur(5px);  filter: blur(5px);')
+      img(src='public\images\WonderWoman.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\Dunkirk.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\SpidermanHomecoming.jpg', style='width: 12.5%;height: 50%; margin-right: 0%;')
+      img(src='public\images\TheLastJedi.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\TheHuntForRedOctober.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\ToKillaMockingbird.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\Inception.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\ToyStory3.jpg', style='width: 12.5%;height: 50%; margin-right: 0%;')
+      img(src='public\images\TheDarkKnight.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\RogueOne.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\Moana.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\Deadpool.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\LaLaLand.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\Moonlight.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\TheGreatGatsby.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\Alien.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\Avengers.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\GuardiansOfTheGalaxy.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\DoctorStrange.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\Ant-Man.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\TheKingsSpeech.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\KillCommand.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\IronMan.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='public\images\CivilWar.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+    h1(align='center', style="font-family: 'Ubuntu', serif; color: #1992ad; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-size: 70px;")
+      | WELCOME
+    //
+      <nav align = center>
+      <a href = "/about/">About</a> &nbsp &nbsp&nbsp|&nbsp&nbsp&nbsp
+      <a href = "/about/">Contact Us</a> &nbsp&nbsp&nbsp| &nbsp&nbsp&nbsp
+      <a href = "/about/">Sign Up</a> &nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+      <a href = "/about/">Login</a>
+      </nav>
+    ul
+      li
+        a(href='/') Home
+      li
+        a(href='http://www.bbc.com/news') News
+      li
+        a(href='#contact') Contact
+      li
+        a(href='#about') About
+      li(style='float:right')
+        a(href='/signup') Sign Up
+      li(style='float:right')
+        a.active(href='/login') Login
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    .vertical-menu
+      a.active(href='/login')
+        h3 Login
+      a(href='/signup')
+        h5 Sign Up
