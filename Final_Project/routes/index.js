@@ -4,7 +4,7 @@ var mongodb = require('mongodb');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Homepage' });
 });
 
 
@@ -26,7 +26,7 @@ router.post('/authenticate', function(req, res){
     var MongoClient = mongodb.MongoClient;
 
     // Define where the MongoDB server is
-    var url = 'mongodb://localhost:27017/final';
+    var url = 'mongodb://localhost:27017/test';
 
     // Connect to the server
     MongoClient.connect(url, function(err, db){
@@ -44,6 +44,7 @@ router.post('/authenticate', function(req, res){
         var b = req.body.password;
         
         console.log(req.body.username);
+        console.log(req.body.password);
         //var status = 0;
 
          
