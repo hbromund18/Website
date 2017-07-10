@@ -1,0 +1,170 @@
+doctype html
+html
+  head
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu', rel='stylesheet')
+    style.
+      html, body{
+      font-family: "Ubuntu", Helvetica, sans-serif;
+      }
+      #contain {
+      position: fixed;
+      width: 375px;
+      height: 400px;
+      top: 30%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -185px;
+      background: rgb(250,250,250);
+      border: 1px solid #ccc;
+      border-radius:10px;
+      }
+      #bottom {
+      background:rgb(250,250,250);
+      width: 100%;
+      height: 150px;
+      margin-top: 30px;
+      }
+      #forgotpassword {
+      margin-top: 420px;
+      left: 50%;
+      margin-left:-185px;
+      position: fixed;
+      border: 1px solid #ccc;
+      width: 375px;
+      height: 50px;
+      border-radius: 10px;
+      background: #e8e8e8;
+      }
+      input[type="text"]{
+      padding-left: 10px;
+      margin: 10px;
+      margin-top: 17px;
+      margin-left: 30px;
+      width: 300px;
+      height: 40px;
+      }
+      input[type="password"] {
+      padding-left: 10px;
+      margin: 10px;
+      margin-top: 10px;
+      margin-left: 30px;
+      width: 300px;
+      height: 40px;
+      }
+      input[type="submit"] {
+      float:right;
+      margin-top:10px;
+      width:85%;
+      height:35%;
+      border-radius:10px;
+      background:#ccffff;
+      margin-right:26px;
+      }
+      input[type="checkbox"]{
+      float:left;
+      margin-left:120px;
+      margin-bottom:30px;
+      }
+      ul {
+      z-index: +1;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #bcbabe;
+      font-family: 'Open Sans', serif;
+      display:table;
+      margin:0 auto;
+      opacity: .8;
+      }
+      li {
+      float: left;
+      }
+      li a {
+      padding-top: 25px;
+      padding-right: 75px;
+      padding-bottom: 25px;
+      padding-left: 75px;
+      display: block;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      text-decoration: none;
+      color: #000;
+      }
+      li a:hover {
+      background-color: #1992ad;
+      font-weight: bold;
+      }
+      .active {
+      background-color: #A1D6E2;
+      }
+  body
+    div(style='position:absolute; z-index: -1;  -webkit-filter: blur(5px);  filter: blur(5px);')
+      img(src='Posters\WonderWoman.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Dunkirk.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\SpidermanHomecoming.jpg', style='width: 12.5%;height: 50%; margin-right: 0%;')
+      img(src='Posters\TheLastJedi.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\TheHuntForRedOctober.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\ToKillaMockingbird.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Inception.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\ToyStory3.jpg', style='width: 12.5%;height: 50%; margin-right: 0%;')
+      img(src='Posters\TheDarkKnight.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\RogueOne.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Moana.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Deadpool.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\LaLaLand.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Moonlight.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\TheGreatGatsby.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Alien.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Avengers.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\GuardiansOfTheGalaxy.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\DoctorStrange.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Ant-Man.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\TheKingsSpeech.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\KillCommand.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\IronMan.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\CivilWar.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+    ul
+      li
+        a(href='homepage.html') Home
+      li
+        a(href='http://www.bbc.com/news') News
+      li
+        a(href='#contact') Contact
+      li
+        a(href='#about') About
+      li(style='float:right')
+        a(href='Sign Up.html') Sign Up
+      li(style='float:right')
+        a.active(href='loginpage.html') Login
+    #contain(style='opacity: .95')
+      form(name='loginform', onsubmit='return login()', action='/authenticate' method='post')
+        p(align='center')
+          font(size='+3') Log In
+        p
+          hr(width='50%', color='#888888', size='1')
+          // username and password
+          input#username(type='text', placeholder='Username', name='username', required='')
+          br
+          input#password(type='Password', placeholder='Password', name='password', required='')
+          #bottom
+            // lower
+            input(type='checkbox')
+            label(for='checkbox') Keep me logged in
+            input(type='Submit', value='Login')
+          // lower
+          
+    br
+    br
+    br
+    br
+    br
+    br
+    #forgotpassword(align='center', style='opacity: .8')
+      // password forgot area
+      font(size='-1')
+        a(href='/signup')  Forgot password?
+        br
+        | 	Don't have an account? 
+        a(href='/signup')  Sign up now 

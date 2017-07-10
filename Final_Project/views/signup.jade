@@ -1,0 +1,147 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', type='text/css', href='Sign Up.css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu', rel='stylesheet')
+  body
+    // DO NOT TOUCH, background images
+    div(style='position:absolute; z-index: -1;  -webkit-filter: blur(5px);  filter: blur(5px);')
+      img(src='Posters\WonderWoman.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Dunkirk.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\SpidermanHomecoming.jpg', style='width: 12.5%;height: 50%; margin-right: 0%;')
+      img(src='Posters\TheLastJedi.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\TheHuntForRedOctober.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\ToKillaMockingbird.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Inception.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\ToyStory3.jpg', style='width: 12.5%;height: 50%; margin-right: 0%;')
+      img(src='Posters\TheDarkKnight.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\RogueOne.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Moana.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Deadpool.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\LaLaLand.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Moonlight.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\TheGreatGatsby.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Alien.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Avengers.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\GuardiansOfTheGalaxy.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\DoctorStrange.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\Ant-Man.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\TheKingsSpeech.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\KillCommand.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\IronMan.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='Posters\CivilWar.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+    ul
+      li
+        a(href='homepage.html') Home
+      li
+        a(href='http://www.bbc.com/news') News
+      li
+        a(href='#contact') Contact
+      li
+        a(href='#about') About
+      li(style='float:right')
+        a(href='Sign Up.html') Sign Up
+      li(style='float:right')
+        a.active(href='loginpage.html') Login
+    #div1
+      br
+      h1  Sign Up 
+      p(align='center')
+        | If you already have an account then 
+        a(href='/login') Log In
+      hr
+      p
+        b
+          ins
+            | Fields with a 
+            sup(style='color:red') *
+            |  are required.
+      form(name='myForm', onsubmit='return validate()', action='/login', method='get', align='center')
+        table(align='center')
+          tr
+            td
+              input#input(type='text', name='fn', placeholder='First Name', required='')
+              sup(style='color:red') *
+              br
+            td(rowspan='6', width='60%')
+              br
+              input#input2(type='text', name='ad1', placeholder='Address Line 1', required='')
+              sup(style='color:red') *
+              br
+              br
+              input#input2(type='text', name='ad2', placeholder='Address Line 2', required='')
+              sup(style='color:red') *
+              br
+              br
+              input#input(type='text', name='City', placeholder='City', required='')
+              sup(style='color:red') *
+              br
+              br
+              input#input(type='text', name='State', placeholder='State', required='')
+              sup(style='color:red') *
+              br
+              br
+              input#input(type='text', name='psz', placeholder='Postal Code/Zip', required='')
+              sup(style='color:red') *
+              br
+          tr
+            td
+              input#input(type='text', name='ln', placeholder='Last Name', required='')
+              sup(style='color:red') *
+              br
+          tr
+            td
+              input#input(type='text', name='un', placeholder='username', required='')
+              sup(style='color:red') *
+              br
+          tr
+            td
+              input#input(type='email', name='em', placeholder='E-Mail', required='')
+              sup(style='color:red') *
+              br
+          tr
+            td
+              input#input(type='password', name='pw1', placeholder='password', required='')
+              sup(style='color:red') *
+              br
+          tr
+            td
+              input#input(type='password', name='pw2', placeholder='Confirm Password', required='')
+              sup(style='color:red') *
+              br
+          tr
+            td
+              input(type='radio', name='gender', value='male')
+              |  Male
+              br
+              input(type='radio', name='gender', value='female')
+              |  Female
+              br
+              input(type='radio', name='gender', value='other')
+              |  Other
+              br
+            td
+              | Day:
+              input(type='number', name='day', min='1', max='31', required='')
+              | 					Month:
+              input(type='number', name='month', min='1', max='12', required='')
+              | 					Year: 
+              input(type='number', name='year', min='1900', max='2017', required='')
+          tr
+          tr
+            #Subbutton(style='text-align:center')
+              th(colspan='2')
+                input#subbut(type='submit', name='Submit', value='Sign Up', align='center')
+        script.
+          function validate() {
+          if( document.myForm.pw1.value != document.myForm.pw2.value ) {
+          window.alert( "Please make sure both password are the same!" ); document.myForm.pw1.focus() && document.myForm.pw2.focus ;
+          return false;
+          }
+          else{
+          return ( true );
+          window.location = "Signed_Home.html"
+          }
+          return( true );
+          }
+        br
