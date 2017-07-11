@@ -3,34 +3,120 @@ html
   head
     title  Homepage 
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu', rel='stylesheet')
-    link(rel='stylesheet', type='text/css', href='public/stylesheets/stylesheet.css')
-  body(bgcolor='#f1f1f2', style='height:100%; width:100%;')
+    style.
+      body{
+      bgcolor='#f1f1f2';
+      style='height:100%; 
+      width:100%;
+      }
+      img {
+      z-index: -100;
+      white-space: nowrap;      
+      }    
+      html{
+      height: 100%;
+      }
+      body{
+      height: 100%;
+      width: 100%;
+      }   
+      .nospace{
+      font-size: 0px;
+      }
+      h1{
+      font-family: 'Ubuntu', serif;
+      font-size: 50px;
+      }
+      h4 {
+      font-family: 'Open Sans', serif;
+      color: #000;
+      }
+      ul {
+      z-index: +1;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #bcbabe;
+      font-family: 'Open Sans', serif;
+      display:table; 
+      margin:0 auto;
+      opacity: .8;
+      }
+      li {
+      float: left;
+      }
+      li a {
+      padding-top: 25px;
+      padding-right: 75px;
+      padding-bottom: 25px;
+      padding-left: 75px;
+      display: block;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      text-decoration: none;
+      color: #000;
+      }
+      li a:hover {
+      background-color: #1992ad;
+      font-weight: bold;
+      }
+      .active {
+      background-color: #A1D6E2;
+      }
+      .vertical-menu {
+      width: 200px;
+      text-align: center;
+      display:table; 
+      margin:0 auto;
+      }
+      .vertical-menu a {
+      font-family: 'Open Sans', serif;
+      background-color: #bcbabe;
+      color: black;
+      display: block;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      text-decoration: none;
+      opacity: .8;
+      font-size: 30px;
+      }
+      .vertical-menu a:hover {
+      background-color: #1992ad;
+      font-weight: bold;
+      }
+      .vertical-menu .active {
+      background-color: #A1D6E2;
+      }
     // This is the Div that creates the background and blurs the images
     div(style='position:absolute; z-index: -1;  -webkit-filter: blur(5px);  filter: blur(5px);')
-      img(src='public\images\WonderWoman.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\Dunkirk.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\SpidermanHomecoming.jpg', style='width: 12.5%;height: 50%; margin-right: 0%;')
-      img(src='public\images\TheLastJedi.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\TheHuntForRedOctober.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\ToKillaMockingbird.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\Inception.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\ToyStory3.jpg', style='width: 12.5%;height: 50%; margin-right: 0%;')
-      img(src='public\images\TheDarkKnight.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\RogueOne.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\Moana.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\Deadpool.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\LaLaLand.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\Moonlight.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\TheGreatGatsby.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\Alien.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\Avengers.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\GuardiansOfTheGalaxy.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\DoctorStrange.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\Ant-Man.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\TheKingsSpeech.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\KillCommand.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\IronMan.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
-      img(src='public\images\CivilWar.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://cdn2-www.superherohype.com/assets/uploads/gallery/wonder-woman/13708397_10154313441628926_7147998445574202230_o.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='https://i0.wp.com/media2.slashfilm.com/slashfilm/wp/wp-content/images/dunkirk-poster.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='https://1.bp.blogspot.com/-obQvRtje8TI/WSckWbILq0I/AAAAAAAAge8/jarOv7Qfi7gEs-qGHYw9_WdLYBDnRoIZQCLcB/s00/Spider_Man_Homecoming_New_Official_Poster_a_JPosters.jpg', style='width: 12.5%;height: 50%; margin-right: 0%;')
+      img(src='https://cdn.vox-cdn.com/uploads/chorus_asset/file/8341575/star_wars_the_last_jedi_poster_1688.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='https://images-na.ssl-images-amazon.com/images/I/817gKCTGg4L._SY445_.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://www.impawards.com/1962/posters/to_kill_a_mockingbird_xlg.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://cdn.collider.com/wp-content/uploads/Inception-movie-poster-7.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://www.impawards.com/2010/posters/toy_story_three_ver10.jpg', style='width: 12.5%;height: 50%; margin-right: 0%;')
+      img(src='https://paulmmartinblog.files.wordpress.com/2011/07/the_dark_knight_poster.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://a.dilcdn.com/bl/wp-content/uploads/sites/6/2016/10/rogueone_onesheetA.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://www.impawards.com/2016/posters/moana_ver8.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='https://www.cinematerial.com/media/posters/md/7a/7ajvdavw.jpg?v=1456368002', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://cdn.cinencuentro.com/wp-content/uploads/2017/01/POSTER-La-La-Land.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='https://www.cinematerial.com/media/posters/md/oq/oqkubbjp.jpg?v=1477422171', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://cdn.collider.com/wp-content/uploads/the-great-gatsby-poster1.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2016/11/alien1979poster.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='https://s-media-cache-ak0.pinimg.com/736x/0f/03/e6/0f03e6733b0cf567cc92e8e20290462f--avengers-poster-avengers-.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://cdn.collider.com/wp-content/uploads/2017/03/guardians-of-the-galaxy-2-imax-poster.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://cdn2-www.superherohype.com/assets/uploads/gallery/doctor-strange-movie/doctorstrange4.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://cdn.collider.com/wp-content/uploads/2015/05/ant-man-poster-1.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://img.cinemablend.com/cb/3/a/7/e/3/a/3a7e3a53b4bb0e7bcc29e93acb1d2e34ec0668af8c56daa1feb7db9c1b39535f.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://www.videorados.com/images/2016/octubre/originales/kill_comand.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://images.vcpost.com/data/images/full/90869/iron-man-movie-poster.jpg?w=590', style='width: 12.5%; height: 50%; margin-right: 0%;')
+      img(src='http://www.joblo.com/posters/images/full/Captain-America-Civil-War-main-poster.jpg', style='width: 12.5%; height: 50%; margin-right: 0%;')
     h1(align='center', style="font-family: 'Ubuntu', serif; color: #1992ad; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-size: 70px;")
       | WELCOME
     //

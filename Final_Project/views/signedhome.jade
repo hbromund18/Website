@@ -6,7 +6,6 @@ html(lang='en')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-    link(rel='stylesheet', type='text/css', href='Logged_in_main_pages.css')
     style.
       #img1 {
       float:right;
@@ -17,6 +16,51 @@ html(lang='en')
       #div1{
       margin-left: -15px;
       }
+      body{
+      padding-top: 60px;
+      background-image: url(https://themighty.com/wp-content/uploads/2016/06/Cinema-Seats_1280x640_acf_cropped.jpg);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      }
+      .navbar-fixed-top{
+      text-decoration-color: rgb(500,500,500);
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(50,0,0,.66);
+      }
+      .navbar-brand{
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+      li a {
+      background-color: rgba(200,200,200,0);
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+      #tbl1{
+      text-decoration-color: rgba(500,500,500);
+      margin: 0;
+      padding: 0;
+      overflow-x: auto;
+      background-color: rgba(500,500,500,.3);
+      border: 1px solid white;
+      height: 50%;
+      }
+      #tbl1-brand{
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
   body
     // Nav Bar Starts
     div
@@ -25,7 +69,7 @@ html(lang='en')
           .navbar-header
             a.navbar-brand(href='/signedhome') Movie Meetup
           ul.nav.navbar-nav
-            li
+            li.active
               a(href='/signedhome') Home
             li
               a(href='/friends') Friends
@@ -43,13 +87,13 @@ html(lang='en')
                 span.glyphicon.glyphicon-user
                 |  My Account
             li
-              a(href='/index')
+              a(href='/')
                 span.glyphicon.glyphicon-login
                 |  Sign Out
     // Nav Bar Ends
     .container
       .jumbotron(style='background-color: rgba(300, 300, 300, 0.5)')
-        img#img1(src='Final_Project\public\images\Logo.jpeg', alt='Website Logo')
+        img#img1(src='Posters/Logo.jpeg', alt='Website Logo')
         h1(style='opacity: 1') Movie Meetup
         h3
           | A movie with your friends, without all the hastle.  
@@ -116,11 +160,11 @@ html(lang='en')
                 span.glyphicon.glyphicon-chevron-left(aria-hidden='true')  
               a.right.carousel-control(href='#home_carousel', role='button', data-slide='next')
                 span.glyphicon.glyphicon-chevron-right(aria-hidden='true')  
-      br
-      br
-      br
-      br
-      br
-      // jQuery (necessary for Bootstrap's JavaScript plugins)
-      script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-      script(src='js/bootstrap.min.js')
+              br
+              br
+              br
+              br
+              br
+              // jQuery (necessary for Bootstrap's JavaScript plugins)
+              script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+              script(src='js/bootstrap.min.js')

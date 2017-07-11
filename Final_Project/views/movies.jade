@@ -6,10 +6,52 @@ html
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-    link(rel='stylesheet', type='text/css', href='Logged_in_main_pages.css')
     style.
       body{
       color:white;
+      padding-top: 60px;
+      background-image: url(https://themighty.com/wp-content/uploads/2016/06/Cinema-Seats_1280x640_acf_cropped.jpg);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      }
+      .navbar-fixed-top{
+      text-decoration-color: rgb(500,500,500);
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(50,0,0,.66);
+      }
+      .navbar-brand{
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+      li a {
+      background-color: rgba(200,200,200,0);
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+      #tbl1{
+      text-decoration-color: rgba(500,500,500);
+      margin: 0;
+      padding: 0;
+      overflow-x: auto;
+      background-color: rgba(500,500,500,.3);
+      border: 1px solid white;
+      height: 50%;
+      }
+      #tbl1-brand{
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
       }
   body
     // Nav Bar Starts
@@ -17,27 +59,27 @@ html
       nav.navbar-fixed-top
         .container-fluid
           .navbar-header
-            a.navbar-brand(href='/signedhome') Movie Meetup
+            a.navbar-brand(href='Signed_Home.html') Movie Meetup
           ul.nav.navbar-nav
+            li.active
+              a(href='Signed_Home.html') Home
             li
-              a(href='/signedhome') Home
+              a(href='Friends_Page.html') Friends
             li
-              a(href='/friends') Friends
+              a(href='GroupPage.html') Groups
             li
-              a(href='/groups') Groups
-            li
-              a(href='/moviepage')
+              a(href='MoviePage.html')
                 | My Movies 
                 span.glyphicon.glyphicon-film
             li
-              a(href='/aboutus') About Us
+              a(href='AboutUs.html') About Us
           ul.nav.navbar-nav.navbar-right
             li
               a(href='#')
                 span.glyphicon.glyphicon-user
                 |  My Account
             li
-              a(href='/index')
+              a(href='Homepage.html')
                 span.glyphicon.glyphicon-login
                 |  Sign Out
     // Nav Bar Ends
@@ -83,32 +125,32 @@ html
     br
     script(type='text/javascript').
       //Tarzan=0, WW=1, Assassins=2, Spiderman=3, apes=4, it=5, gotg=6, cars=7, orient=8
-      var x = 1
+      var x = 8
       var movie=["The Legend of Tarzan", "Wonder Woman", "Assassin's Creed", "Spiderman: Homecoming","War for the Planet of the Apes","IT","Guardians of the Galaxy Vol. 2","Cars 3", "Murder on the Orient Express" ];
       var director=["David Yates", "Patty Jenkins", "Justin Kurzel", "Jon Watts", "Matt Reeves","Andrés Muschietti","James Gunn", "Brian Fee", "Kenneth Branagh" ];
-      var cast=["Alexander Skarsgård, Samuel L. Jackson, Margot Robbie, Christoph Waltz, Djimon Honson, Rory J. Saper","Gal Gadot, Chris Pine, Robin Wright, Connie Nielsen, Danny Huston, David Thewlis", "Michael Fassbender, Marion Cotillard, Jeremy Irons, Brandan Gleeson, Charlotte Rampling, Michael Kenneth Williams", "Tom Holland, Michael Keaton, Robert Downey Jr., Marisa Tomei, Zendaya, Donald Glover, Laura Harrier","Andy Serkis, Woody Harrelson, Steve Zahn, Terry Notary, Amiah Miller, Karin Konoval", "Bill Skarsgård, Jaeden Lieberher, Finn Wolfhard, Jeremy ray taylor, Sophia Lillis","Chris Pratt, Zoe Saldana, Dave Bautista, Brandly Cooper, Vin Diesel, Michael Rooker","Owen Wilson, Cristela Alonzo, Chris Cooper, Kerry Washington, Nathan Fillion, Lea DeLaria, Armia Hammer, Bonnie Hunt","Johnny Depp, Daisy Ridley, Michelle Pfeiffer, Kenneth Branagh, Tom Bateman, Penelope Cruz, Willem Dafoe, Judi Dench" ];
+      var cast=["Alexander Skarsgård, Samuel L. Jackson, Margot Robbie, Christoph Waltz, Djimon Honson, Rory J. Saper","Gal Gadot, Chris Pine, Robin Wright, Connie Nielsen, Danny Huston, David Thewlis", "Michael Fassbender, Marion Cotillard, Jeremy Irons, Brandan Gleeson, Charlotte Rampling, Michael Kenneth Williams", "Tom Holland, Michael Keaton, Robert Do3ney Jr., Marisa Tomei, Zendaya, Donald Glover, Laura Harrier","Andy Serkis, Woody Harrelson, Steve Zahn, Terry Notary, Amiah Miller, Karin Konoval", "Bill Skarsgård, Jaeden Lieberher, Finn Wolfhard, Jeremy ray taylor, Sophia Lillis","Chris Pratt, Zoe Saldana, Dave Bautista, Brandly Cooper, Vin Diesel, Michael Rooker","Owen Wilson, Cristela Alonzo, Chris Cooper, Kerry Washington, Nathan Fillion, Lea DeLaria, Armia Hammer, Bonnie Hunt","Johnny Depp, Daisy Ridley, Michelle Pfeiffer, Kenneth Branagh, Tom Bateman, Penelope Cruz, Willem Dafoe, Judi Dench" ];
       var rating=["PG-13", "PG-13", "PG-13", "PG-13", "PG-13", "R","PG-13","G", "TBD" ];
       var runtime=["1 hour 49 minutes", "2 hours 21 minutes", "1 hour 55 minutes", "2 hours 13 minutes", "2 hours 20 minutes", "TBD","2 hours 17 minutes", "1 hours 49 minutese", "TBD" ];
       var summary=["It has been years since the man once known as Tarzan (Alexander Skarsgård) left the jungles of Africa behind for a gentrified life as John Clayton III, Lord Greystoke, with his beloved wife, Jane (Margot Robbie) at his side. Now, he has been invited back to the Congo to serve as a trade emissary of Parliament, unaware that he is a pawn in a deadly convergence of greed and revenge, masterminded by the Belgian, Captain Leon Rom (Christoph Waltz). But those behind the murderous plot have no idea what they are about to unleash.", "Before she was Wonder Woman (Gal Gadot), she was Diana, princess of the Amazons, trained to be an unconquerable warrior. Raised on a sheltered island paradise, Diana meets an American pilot (Chris Pine) who tells her about the massive conflict that's raging in the outside world. Convinced that she can stop the threat, Diana leaves her home for the first time. Fighting alongside men in a war to end all wars, she finally discovers her full powers and true destiny.", "Based on the much acclaimed game series comes the movie that represents the Assassins Brotherhood, where through a revolutionary technology that unlocks his genetic memories, Callum Lynch (Michael Fassbender) experiences the adventures of his ancestor, Aguilar, in 15th Century Spain. Callum discovers he is descended from a mysterious secret society, the Assassins, and amasses incredible knowledge and skills to take on the oppressive and powerful Templar organization in the present day.", "A young Peter Parker/Spider-Man (Tom Holland), who made his sensational debut in Captain America: Civil War, begins to navigate his newfound identity as the web-slinging super hero in Spider-Man: Homecoming. Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May (Marisa Tomei), under the watchful eye of his new mentor Tony Stark (Robert Downey, Jr.). Peter tries to fall back into his normal daily routine--distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man--but when the Vulture (Michael Keaton) emerges as a new villain, everything that Peter holds most important will be threatened.", "In War for the Planet of the Apes, the third chapter of the critically acclaimed blockbuster franchise, Caesar (voiced and motion captured by Andy Serkis) and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel (Woody Harrelson). After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet.", "Based on the best-selling novel by Stephen King, and remaking trhe original IT movie from 1990 comes IT where, in Derry, Maine, seven friends come face-to-face with a shape shifter, who takes the form of an evil clown who targets children.","After the events of the first Guardians of the Galaxy and set to the all-new sonic backdrop of Awesome Mixtape #2, Marvel Studios' 'Guardians of the Galaxy Vol. 2' continues the team's adventures as they traverse the outer reaches of the cosmos. The Guardians must fight to keep their newfound family together as they unravel the mystery of Peter Quill's true parentage. Old foes become new allies and fan-favorite characters from the classic comics will come to our heroes' aid as the Marvel Cinematic Universe continues to expand.", "Blindsided by a new generation of blazing-fast racers, the legendary Lightning McQueen (voice of Owen Wilson) is suddenly pushed out of the sport he loves. To get back in the game, he will need the help of an eager young race technician, Cruz Ramirez (voice of Cristela Alonzo), with her own plan to win, plus inspiration from the late Fabulous Hudson Hornet and a few unexpected turns. Proving that #95 isn't through yet will test the heart of a champion on Piston Cup Racing's biggest stage!",  "Based on the best-selling novel by Agatha Christie comes a story where a lavish train ride unfolds into a stylish & suspenseful mystery when there is a murder and Hercule Poirot (Kenneth Branagh) is running against time to uncover the truth of which of the 13 passengers was the killer before they arrive to their destination and they are all free to escape." ];
       var imgArray=[]
       imgArray[0] = new Image();
-      imgArray[0].src = 'Posters/tarzan.jpg';
+      imgArray[0].src = 'https://s-media-cache-ak0.pinimg.com/originals/79/e8/39/79e8394dc1a92796708f6438d718015e.jpg';
       imgArray[1] = new Image();
-      imgArray[1].src = 'Posters/WonderWoman.jpg';
+      imgArray[1].src = 'http://cdn2-www.superherohype.com/assets/uploads/gallery/wonder-woman/13708397_10154313441628926_7147998445574202230_o.jpg';
       imgArray[2] = new Image();
-      imgArray[2].src = 'Posters/assassins.jpg';
+      imgArray[2].src = 'http://bestscreenwallpaper.pro/wp-content/uploads/2016/05/poster_46600.jpg';
       imgArray[3] = new Image();
-      imgArray[3].src = 'Posters/spiderman.jpg';
+      imgArray[3].src = 'https://1.bp.blogspot.com/-obQvRtje8TI/WSckWbILq0I/AAAAAAAAge8/jarOv7Qfi7gEs-qGHYw9_WdLYBDnRoIZQCLcB/s00/Spider_Man_Homecoming_New_Official_Poster_a_JPosters.jpg';
       imgArray[4] = new Image();
-      imgArray[4].src = 'Posters/apes.jpg';
+      imgArray[4].src = 'https://3.bp.blogspot.com/-M_UnmAgZLhY/WN2eMdiGodI/AAAAAAAAgPg/qSz7mtXQl4cOx7xNB4wA_sktlqeSEAIQgCLcB/s00/War_For_The_Planet_Of_The_Apes_New_Official_Poster_JPosters.jpg';
       imgArray[5] = new Image();
-      imgArray[5].src = 'Posters/it.jpg';
+      imgArray[5].src = 'http://cinepremiere.impresionesaerea.netdna-cdn.com/trailers/2017/03-marzo/It-poster.jpg';
       imgArray[6] = new Image();
-      imgArray[6].src = 'Posters/gotg2.jpg';
+      imgArray[6].src = 'https://media0dk-a.akamaihd.net/56/44/9309ee7890499a5b4d7d825f02dbe80e.jpg';
       imgArray[7] = new Image();
-      imgArray[7].src = 'Posters/cars3.jpg';
+      imgArray[7].src = 'https://s-media-cache-ak0.pinimg.com/originals/b1/2c/69/b12c693034488e3394895cf1d7d56a35.jpg';
       imgArray[8] = new Image();
-      imgArray[8].src = 'Posters/murder.jpeg';
+      imgArray[8].src = 'https://s-media-cache-ak0.pinimg.com/originals/48/7d/d8/487dd860d62522576db6a0c4dd81923e.jpg';
       var linkArray= []
       linkArray[0] = new Image()
       linkArray[0].src = 'https://www.youtube.com/embed/v5r6FrEgg5M';

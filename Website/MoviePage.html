@@ -6,34 +6,61 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="Logged_in_main_pages.css">
+     
 <style>
 body{
     color:white;
+  padding-top: 60px;
+  background-image: url(https://themighty.com/wp-content/uploads/2016/06/Cinema-Seats_1280x640_acf_cropped.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+    
 }
-#img1{
- margin-left: 15%;
- width:20%;
-}
-#img2{
-    width:20%;
-    float:middle;
-    align-content: center;
-    margin-left: 5%
 
 
-}
-#img3{
-    width:20%;
-    float:right;
-    margin-right: 15%
 
+
+.navbar-fixed-top{
+  text-decoration-color: rgb(500,500,500);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(50,0,0,.66);
 }
-#moviediv1{
- margin-left: 15%;
- margin-right:15%;
+.navbar-brand{  
+  color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-=
+li a {
+    background-color: rgba(200,200,200,0);
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#tbl1{
+    text-decoration-color: rgba(500,500,500);
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    background-color: rgba(500,500,500,.3);
+    border: 1px solid white;
+    height: 50%;
+}
+
+#tbl1-brand{
+        color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 </style>
 </head>
 <body>
@@ -60,18 +87,112 @@ body{
    </nav>
 </div>
   <!-- Nav Bar Ends-->
-     <a href="Movies.html"><img id="img1" src="Posters/tarzan.jpeg"></a>
-     <a href="Movies.html"><img id="img2" src="Posters/wonderwoman.jpeg"></a>
-     <a href="Movies.html"><img id="img3" src="Posters/assassins.jpeg"></a>
-     <br><br><br><br><br>
-     
-     <a href="Movies.html"><img id="img1" src="Posters/homecoming.jpeg"></a>
-     <a href="Movies.html"><img id="img2" src="Posters/warfortheplanet.jpeg"></a>
-     <a href="Movies.html"><img id="img3" src="Posters/it.jpeg"></a>
-     <br><br><br><br><br>
-     
-     <a href="Movies.html"><img id="img1" src="Posters/guardians.jpeg"></a>
-     <a href="Movies.html"><img id="img2" src="Posters/cars3.jpeg"></a>
-     <a href="Movies.html"><img id="img3" src="Posters/murder.jpeg"></a>
-     <br><br><br><br><br>
+    <br /><br /><br />
+    <div class="container" style="width:100%">
+        
+        <!-- Left-aligned media object -->
+            <div class="media-left">
+                <img id="poster" class="media-object" style="width:300px">
+            </div>
+            <div class="media-body">
+                <h2 id="name"></h2><br>
+                <b><u><h4>Director: </h4></u></b><h4 id="director"></h4><br>
+                <b><u><h4>Cast: </h4></u></b><h4 id="cast"></h4><br>
+                <b><u><h4>Rating: </h4></u></b><h4 id="rating"></h4><br>
+                <b><u><h4>Runtime: </h4></u></b><h4 id="runtime"></h4><br>
+                <b><u><h4>Summary: </h4></u></b><h4 id="summary"></h4><br>
+                
+                
+                <div id="div1" class="container" style="width:580px">
+                  <iframe width="560" height="315" src="" id="trailer" frameborder="0" allowfullscreen ></iframe>                  
+                </div> 
+            </div>
+        </div>
+        <br /><br /><br />
+        
+            </div>
+         <script type="text/javascript">
+                  //Tarzan=0, WW=1, Assassins=2, Spiderman=3, apes=4, it=5, gotg=6, cars=7, orient=8
+                  var x = 8
+
+                    var movie=["The Legend of Tarzan", "Wonder Woman", "Assassin's Creed", "Spiderman: Homecoming","War for the Planet of the Apes","IT","Guardians of the Galaxy Vol. 2","Cars 3", "Murder on the Orient Express" ];
+                    var director=["David Yates", "Patty Jenkins", "Justin Kurzel", "Jon Watts", "Matt Reeves","Andrés Muschietti","James Gunn", "Brian Fee", "Kenneth Branagh" ];
+                    var cast=["Alexander Skarsgård, Samuel L. Jackson, Margot Robbie, Christoph Waltz, Djimon Honson, Rory J. Saper","Gal Gadot, Chris Pine, Robin Wright, Connie Nielsen, Danny Huston, David Thewlis", "Michael Fassbender, Marion Cotillard, Jeremy Irons, Brandan Gleeson, Charlotte Rampling, Michael Kenneth Williams", "Tom Holland, Michael Keaton, Robert Downey Jr., Marisa Tomei, Zendaya, Donald Glover, Laura Harrier","Andy Serkis, Woody Harrelson, Steve Zahn, Terry Notary, Amiah Miller, Karin Konoval", "Bill Skarsgård, Jaeden Lieberher, Finn Wolfhard, Jeremy ray taylor, Sophia Lillis","Chris Pratt, Zoe Saldana, Dave Bautista, Brandly Cooper, Vin Diesel, Michael Rooker","Owen Wilson, Cristela Alonzo, Chris Cooper, Kerry Washington, Nathan Fillion, Lea DeLaria, Armia Hammer, Bonnie Hunt","Johnny Depp, Daisy Ridley, Michelle Pfeiffer, Kenneth Branagh, Tom Bateman, Penelope Cruz, Willem Dafoe, Judi Dench" ];
+                    var rating=["PG-13", "PG-13", "PG-13", "PG-13", "PG-13", "R","PG-13","G", "TBD" ];
+                    var runtime=["1 hour 49 minutes", "2 hours 21 minutes", "1 hour 55 minutes", "2 hours 13 minutes", "2 hours 20 minutes", "TBD","2 hours 17 minutes", "1 hours 49 minutese", "TBD" ];
+                    var summary=["It has been years since the man once known as Tarzan (Alexander Skarsgård) left the jungles of Africa behind for a gentrified life as John Clayton III, Lord Greystoke, with his beloved wife, Jane (Margot Robbie) at his side. Now, he has been invited back to the Congo to serve as a trade emissary of Parliament, unaware that he is a pawn in a deadly convergence of greed and revenge, masterminded by the Belgian, Captain Leon Rom (Christoph Waltz). But those behind the murderous plot have no idea what they are about to unleash.", "Before she was Wonder Woman (Gal Gadot), she was Diana, princess of the Amazons, trained to be an unconquerable warrior. Raised on a sheltered island paradise, Diana meets an American pilot (Chris Pine) who tells her about the massive conflict that's raging in the outside world. Convinced that she can stop the threat, Diana leaves her home for the first time. Fighting alongside men in a war to end all wars, she finally discovers her full powers and true destiny.", "Based on the much acclaimed game series comes the movie that represents the Assassins Brotherhood, where through a revolutionary technology that unlocks his genetic memories, Callum Lynch (Michael Fassbender) experiences the adventures of his ancestor, Aguilar, in 15th Century Spain. Callum discovers he is descended from a mysterious secret society, the Assassins, and amasses incredible knowledge and skills to take on the oppressive and powerful Templar organization in the present day.", "A young Peter Parker/Spider-Man (Tom Holland), who made his sensational debut in Captain America: Civil War, begins to navigate his newfound identity as the web-slinging super hero in Spider-Man: Homecoming. Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May (Marisa Tomei), under the watchful eye of his new mentor Tony Stark (Robert Downey, Jr.). Peter tries to fall back into his normal daily routine--distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man--but when the Vulture (Michael Keaton) emerges as a new villain, everything that Peter holds most important will be threatened.", "In War for the Planet of the Apes, the third chapter of the critically acclaimed blockbuster franchise, Caesar (voiced and motion captured by Andy Serkis) and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel (Woody Harrelson). After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet.", "Based on the best-selling novel by Stephen King, and remaking trhe original IT movie from 1990 comes IT where, in Derry, Maine, seven friends come face-to-face with a shape shifter, who takes the form of an evil clown who targets children.","After the events of the first Guardians of the Galaxy and set to the all-new sonic backdrop of Awesome Mixtape #2, Marvel Studios' 'Guardians of the Galaxy Vol. 2' continues the team's adventures as they traverse the outer reaches of the cosmos. The Guardians must fight to keep their newfound family together as they unravel the mystery of Peter Quill's true parentage. Old foes become new allies and fan-favorite characters from the classic comics will come to our heroes' aid as the Marvel Cinematic Universe continues to expand.", "Blindsided by a new generation of blazing-fast racers, the legendary Lightning McQueen (voice of Owen Wilson) is suddenly pushed out of the sport he loves. To get back in the game, he will need the help of an eager young race technician, Cruz Ramirez (voice of Cristela Alonzo), with her own plan to win, plus inspiration from the late Fabulous Hudson Hornet and a few unexpected turns. Proving that #95 isn't through yet will test the heart of a champion on Piston Cup Racing's biggest stage!",  "Based on the best-selling novel by Agatha Christie comes a story where a lavish train ride unfolds into a stylish & suspenseful mystery when there is a murder and Hercule Poirot (Kenneth Branagh) is running against time to uncover the truth of which of the 13 passengers was the killer before they arrive to their destination and they are all free to escape." ];
+                    var imgArray=[]
+
+                    imgArray[0] = new Image();
+                      imgArray[0].src = 'Posters/tarzan.jpg';
+
+                    imgArray[1] = new Image();
+                      imgArray[1].src = 'Posters/WonderWoman.jpg';
+
+                    imgArray[2] = new Image();
+                      imgArray[2].src = 'Posters/assassins.jpg';
+
+                    imgArray[3] = new Image();
+                      imgArray[3].src = 'Posters/spiderman.jpg';
+
+                    imgArray[4] = new Image();
+                      imgArray[4].src = 'Posters/apes.jpg';
+
+                    imgArray[5] = new Image();
+                      imgArray[5].src = 'Posters/it.jpg';
+
+                    imgArray[6] = new Image();
+                      imgArray[6].src = 'Posters/gotg2.jpg';
+
+                    imgArray[7] = new Image();
+                      imgArray[7].src = 'Posters/cars3.jpg';
+
+                    imgArray[8] = new Image();
+                      imgArray[8].src = 'Posters/murder.jpeg';
+
+                      var linkArray= []
+
+                    linkArray[0] = new Image()
+                      linkArray[0].src = 'https://www.youtube.com/embed/v5r6FrEgg5M';
+                    linkArray[1] = new Image()
+                      linkArray[1].src = 'https://www.youtube.com/embed/1Q8fG0TtVAY';
+                    linkArray[2] = new Image()
+                      linkArray[2].src = 'https://www.youtube.com/embed/gfJVoF5ko1Y';
+                    linkArray[3] = new Image()
+                      linkArray[3].src = 'https://www.youtube.com/embed/U0D3AOldjMU';
+                    linkArray[4] = new Image()
+                      linkArray[4].src = 'https://www.youtube.com/embed/qxjPjPzQ1iU';
+                    linkArray[5] = new Image()
+                      linkArray[5].src = 'https://www.youtube.com/embed/xE0kRwDXn7o';
+                    linkArray[6] = new Image()
+                      linkArray[6].src = 'https://www.youtube.com/embed/duGqrYw4usE';
+                    linkArray[7] = new Image()
+                      linkArray[7].src = 'https://www.youtube.com/embed/xGGM5Sy5PJs';
+                    linkArray[8] = new Image()
+                      linkArray[8].src = 'https://www.youtube.com/embed/Mq4m3yAoW8E';
+
+
+
+
+                  var mov=movie[x];
+                  var dir=director[x];
+                  var cas=cast[x];
+                  var rat=rating[x];
+                  var run=runtime[x];
+                  var sum=summary[x];
+                  var poster=imgArray[x]
+                  var trailer=linkArray[x]
+                document.getElementById("name").innerHTML = mov;
+                document.getElementById("director").innerHTML = dir;
+                document.getElementById("cast").innerHTML = cas;
+                document.getElementById("rating").innerHTML = rat;
+                document.getElementById("runtime").innerHTML = run;
+                document.getElementById("summary").innerHTML = sum;
+                document.getElementById("poster").src = poster.src;
+                document.getElementById("trailer").src = trailer.src;
+
+  </script>
+
+
+
 </body>

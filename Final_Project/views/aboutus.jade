@@ -6,7 +6,6 @@ html
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-    link(rel='stylesheet', type='text/css', href='Logged_in_main_pages.css')
     style.
       body{
       padding-top: 60px;
@@ -59,27 +58,27 @@ html
       nav.navbar-fixed-top
         .container-fluid
           .navbar-header
-            a.navbar-brand(href='Signed_Home.html') Movie Meetup
+            a.navbar-brand(href='/signedhome') Movie Meetup
           ul.nav.navbar-nav
             li.active
-              a(href='Signed_Home.html') Home
+              a(href='/signedhome') Home
             li
-              a(href='Friends_Page.html') Friends
+              a(href='/friends') Friends
             li
-              a(href='GroupPage.html') Groups
+              a(href='/groups') Groups
             li
-              a(href='MoviePage.html')
+              a(href='/moviepage')
                 | My Movies 
                 span.glyphicon.glyphicon-film
             li
-              a(href='AboutUs.html') About Us
+              a(href='/aboutus') About Us
           ul.nav.navbar-nav.navbar-right
             li
               a(href='#')
                 span.glyphicon.glyphicon-user
                 |  My Account
             li
-              a(href='Homepage.html')
+              a(href='/')
                 span.glyphicon.glyphicon-login
                 |  Sign Out
     // Nav Bar Ends
